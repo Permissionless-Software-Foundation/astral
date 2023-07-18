@@ -3,14 +3,16 @@ import {LocalStorage} from 'quasar'
 const isClientUsingTor = () => window.location.hostname.endsWith('.onion')
 
 const mainnetDefaultRelays = {
-    'wss://nostr-pub.wellorder.net': {read: true, write: true},
-    'wss://nostr.onsats.org': {read: true, write: true},
-    'wss://nostr-relay.wlvs.space': {read: true, write: true},
-    'wss://relay.damus.io': {read: true, write: true},
-    'wss://nostr.zebedee.cloud': {read: true, write: false},
-    'wss://relay.nostr.info': {read: true, write: true},
-    'wss://nostr-pub.semisol.dev': {read: true, write: false},
-    'wss://nostr.walletofsatoshi.com': {read: true, write: false},
+    // 'wss://nostr-pub.wellorder.net': {read: true, write: true},
+    // 'wss://nostr.onsats.org': {read: true, write: true},
+    // 'wss://nostr-relay.wlvs.space': {read: true, write: true},
+    // 'wss://relay.damus.io': {read: true, write: true},
+    // 'wss://nostr.zebedee.cloud': {read: true, write: false},
+    // 'wss://relay.nostr.info': {read: true, write: true},
+    // 'wss://nostr-pub.semisol.dev': {read: true, write: false},
+    // 'wss://nostr.walletofsatoshi.com': {read: true, write: false},
+    'wss://nostr.bch.ninja': {read: true, write: true},
+    'wss://nostr-relay.psfoundation.info': {read: true, write: true}
   }
   // const default = [
   //   ['wss://nostr.rocks', {read: true, write: true}],
@@ -19,6 +21,8 @@ const mainnetDefaultRelays = {
   //   ["wss://relay.damus.io", {read: true, write: true}],
   // ]
   const mainnetOptionalRelays = [
+    'wss://nostr.bch.ninja',
+    'wss://nostr-relay.psfoundation.info',
     'wss://nostr-pub.wellorder.net',
     'wss://nostr.swiss-enigma.ch',
     'wss://nostr.cercatrova.me',
